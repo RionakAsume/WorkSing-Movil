@@ -23,16 +23,16 @@ val WorkSignTypography = Typography(
     titleLarge = TextStyle(
         fontFamily = Antonio,
         fontWeight = FontWeight.Bold,
-        fontSize = 60.sp,
-        lineHeight = 64.sp,
+        fontSize = 50.sp,
+        lineHeight = 54.sp,
         letterSpacing = 0.sp
     ),
     // For smaller body text, like 'tareas nuevas' - Final, very large size for tablets
     bodyLarge = TextStyle(
         fontFamily = OpenSans,
         fontWeight = FontWeight.Normal,
-        fontSize = 36.sp,
-        lineHeight = 44.sp,
+        fontSize = 26.sp,
+        lineHeight = 34.sp,
         letterSpacing = 0.5.sp
     )
 )

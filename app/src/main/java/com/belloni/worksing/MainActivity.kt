@@ -162,12 +162,15 @@ fun UserCard(user: User, notificationColor: Color, onClick: () -> Unit) {
                 )
             }
             Spacer(Modifier.weight(1f))
-            IconButton(onClick = { /* TODO: Notification click action */ }) {
+            IconButton(
+                onClick = { /* TODO: Notification click action */ },
+                modifier = Modifier.size(60.dp) // CORRECT: Size applied to the button
+            ) {
                 Icon(
                     imageVector = Icons.Default.Notifications,
                     contentDescription = "Notification Bell",
                     tint = notificationColor,
-                    modifier = Modifier.size(80.dp) // Adjusted, proportional size
+                    modifier = Modifier.fillMaxSize() // CORRECT: Icon fills the button
                 )
             }
         }
